@@ -1,1 +1,489 @@
 
+.navbar{
+    display: flex;
+    gap: 60%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0% 1% 0% 1%;
+}
+.show_product{
+    border: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    
+}
+.links ul{
+    display: flex;
+    list-style-type: none;
+    gap: 45px;
+    font-size: 23px;
+}
+.pt{
+    font-size: 60px;
+    text-align: center;
+}
+.product_img {
+    width: 400px; /* Or any desired width */
+    height: 250px; /* Or any desired height */
+    overflow: hidden; /* This ensures that any parts of the image that exceed the container are hidden */
+}
+
+.pimg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.nav_link:hover{
+    color: rgb(112, 106, 106);
+}
+
+.product_grid{
+    padding: 4% 4% 4% 4%;
+    background-color: whitesmoke;
+}
+button:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    background-color: rgb(49, 48, 48);
+    border-color: rgb(49, 48, 48);
+}
+.show_product:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+
+}
+.show_product{
+    border-radius: 22px;
+}
+img{
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+.shopping{
+    width: 120px;
+    height: 50px;
+    border-radius: 22px;
+    border: 2px solid;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+}
+
+.shopping_head{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.cart_content{
+    padding: 4% 4% 4% 4%;
+}
+
+.card{
+    text-align: center;
+}
+.product_cnt{
+    font-size: 20px;
+}
+.logo{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.copy{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.poster_font {
+    padding-top: 4%;
+    font-size: 100px;
+    text-align: center;
+}
+.service_head{
+    font-size: 90px;
+    text-align: center;
+}
+.sevice_body{
+    display: flex;
+    flex-direction: column;
+}
+.side1 img{
+    height: 600px;
+    width: 1000px;
+}
+.content{
+    background-color: whitesmoke;
+}
+.footer_logo{
+    font-size: 40px;
+}
+.contact{
+    font-size: 20px;
+}
+.footer{
+    padding: 2% 5%;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 90%;
+}
+.first-half{
+    display: flex;
+    gap: 40%;
+}
+.icons{
+    margin-right: 15%;
+    font-size: 30px;
+}
+.icons:hover{
+    color: rgb(177, 166, 166);
+}
+i{
+    display: inline-block;
+}
+.footer_mail{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.service1{
+    display: flex;
+    gap: 50px;
+}
+.service2{
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.side2 .side_heading{
+    font-size: 40px;
+    padding: 2%;
+}
+.arrow{
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.side2 .side_content{
+    font-size: 20px;
+    padding: 0% 20% 2% 2%;
+}
+.poster_image img{
+    width: 100%;
+    height: 700px;
+    margin-top: 5%;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 3% 3% 3% 3%;
+    font-size: 23px;
+}
+
+.shop{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+.poster_content{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+.add_product{
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    margin-left: 45%;
+    
+}
+.add_product:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+
+    color: rgb(177, 166, 166);
+
+}
+.copyright{
+    margin-top: 60%;
+}
+
+@media (max-width:1600px){
+    .links ul{
+        gap: 30px;
+    }
+    .navbar{
+        gap: 60%;
+        padding-right: 0% 1% 0% 1%;
+    }
+    .side1 img{
+        height: 600px;
+        width: 790px;
+    }
+    
+    
+}
+@media (max-width:1500px){
+    .map{
+        height: 200px;
+        width: 200px;
+    }
+    .first-half{
+        display: flex;
+        gap: 25%;
+    }
+    .copyright{
+        margin-top: 55%;
+    }
+    .navbar{
+        gap: 49%;
+    }
+}
+@media (max-width:1400px){
+    .navbar{
+        gap: 50%;
+    }
+    .side1 img{
+        height: 600px;
+        width: 690px;
+    }
+    .poster_image img{
+        width: 100%;
+        height: 500px;
+    }
+    .side2 .side_heading{
+        font-size: 30px;
+    }
+    iframe{
+        height: 350px;
+        width: 550px;
+    }
+    .first-half{
+        gap: 20%;
+    }
+    .copyright{
+        margin-top: 50%;
+    }
+   
+    
+}
+@media (max-width:1200px){
+    .navbar{
+        gap: 30%;
+    }
+    .side1 img{
+        height: 600px;
+        width: 590px;
+    }
+    .poster_font {
+        font-size: 90px;
+        text-align: center;
+    }
+    .first-half{
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+    }
+    .copyright{
+        margin-top: 10%;
+    }
+    iframe{
+        display: none;
+    }
+
+}
+@media (max-width:800px){
+    .poster_font {
+        font-size: 80px;
+        text-align: center;
+    }
+    .navbar{
+        gap: 28%;
+    }
+}
+@media (max-width:1190px){
+    .side1 img{
+        height: 400px;
+        width: 90%;
+        padding: 4% 5% 0% 5%;
+    }
+    .service1{
+        display: flex;
+        flex-direction: column;
+    }
+    .service2{
+        display: flex;
+        flex-direction: column;
+    }
+    .side2 .side_content {
+        padding: 0% 5% 0% 5%;
+    }
+    .side2 .side_heading{
+        padding: 0% 5% 0% 5%;
+    }
+    .poster_content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+
+@media (max-width:790px){
+    .poster_image img{
+        width: 100%;
+        height: 400px;
+    }
+    .navbar{
+        gap: 15%;
+    }
+    .side1 img{
+        height: 600px;
+        width: 490px;
+    }
+    .side1 img{
+        height: 350px;
+        width: 90%;
+        padding: 4% 5% 0% 5%;
+    }
+    .service1{
+        display: flex;
+        flex-direction: column;
+    }
+    .service2{
+        display: flex;
+        flex-direction: column;
+    }
+    .side2 .side_content {
+        padding: 0% 5% 0% 5%;
+    }
+    .side2 .side_heading{
+        padding: 0% 5% 0% 5%;
+    }
+    .poster_content{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+}
+@media (max-width:670px){
+    .poster_font {
+        font-size: 70px;
+        text-align: center;
+    }
+    .poster_image img{
+        width: 100%;
+        height: 400px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .side1 img{
+        height: 340px;
+        width: 90%;
+        padding: 4% 5% 0% 5%;
+    }
+    .service1{
+        display: flex;
+        flex-direction: column;
+    }
+    .service2{
+        display: flex;
+        flex-direction: column;
+    }
+    .side2 .side_content {
+        padding: 0% 5% 0% 5%;
+    }
+    .side2 .side_heading{
+        padding: 0% 5% 0% 5%;
+    }
+    .poster_content{
+        font-size: 18px;
+        margin-left: 3%;
+        margin-right: 3%;
+        text-align: center;
+    }
+}
+@media (max-width:500px){
+    .poster_font {
+        font-size: 50px;
+        text-align: center;
+    }
+    .side2 .side_content {
+        font-size: 18px;
+    }
+    .poster_image img{
+        width: 100%;
+        height: 300px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        margin-left: -500%;
+        height: 0px;
+        width: 0px;
+        transition: margin-left 0.5s ease;
+        overflow: hidden;
+    }
+    .side1 img{
+        height: 200px;
+        width: 90%;
+        padding: 4% 5% 0% 5%;
+    }
+    .service1{
+        display: flex;
+        flex-direction: column;
+    }
+    .service2{
+        display: flex;
+        flex-direction: column;
+    }
+    .side2 .side_content {
+        padding: 0% 5% 0% 5%;
+    }
+    .side2 .side_heading{
+        padding: 0% 5% 0% 5%;
+    }
+    .copy{
+        display: block;
+        /* margin-right: 10%; */
+        font-size: 40px;
+    }
+   
+    #check:checked ~ ul{
+        display: flex;
+        margin-left: 0%;
+        height: auto;
+        width: auto;
+        margin-top: 70%;
+    }
+    .poster_content{
+        font-size: 18px;
+        margin-left: 3%;
+        margin-right: 3%;
+        text-align: center;
+    }
+    .service_head{
+        font-size: 50px;
+    }
+    .show_product{
+        width: 300px;
+    }
+    .pimg{
+        height: 200px;
+        width: 300px;
+        display: flex;
+        flex-grow: inherit;
+    }
+    .shopping{
+        width: 100px;
+    }
+}
