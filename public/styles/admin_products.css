@@ -1,0 +1,23 @@
+.data{
+    padding: 3% 3% 3% 3%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.crud{
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 5%;
+}

@@ -1,0 +1,21 @@
+.order_form{
+    width: 20%;
+    margin-left: 40%;
+}
+.submit{
+
+margin-top: 6%;
+margin-left: 40%;
+border-radius: 5%;
+}
+form input{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+label{
+    font-size: 20px;
+}
+.card{
+    text-align: start;
+    padding-left: 5px;
+}
