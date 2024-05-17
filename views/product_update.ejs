@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link href="/styles/home.css" rel="stylesheet">
+    <link href="/styles/cart.css" rel="stylesheet">
+    <link href="/styles/order.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <form method="post" action="/product_update?id=<%- rows[0].id %>" class="order_form">
+        <input type="hidden" value="<%- rows[0].id %>">
+        <input name="product_name" required type="text" value="<%- rows[0].product_name %>" placeholder="Product Name">
+        <input name="product_price" required type="number" value="<%- rows[0].product_price %>" placeholder="Product Price">
+        <button type="Submit" class="shopping">Submit</button>
+    </form>
+</body>
+</html>

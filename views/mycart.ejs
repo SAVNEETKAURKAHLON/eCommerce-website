@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="/styles/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="/styles/order.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/styles/login.css"> -->
+   
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <p>LOGO</p>
+        </div>
+        <div class="links">
+            <input type="checkbox" unchecked  id="check" hidden>
+            <button class="copy" id="c" hidden onclick="btn()">&#128980;</button>
+            
+            <ul>
+                <li><a href="/products" class="nav_link">Home</a></li>
+                <li><a href="#srvices" class="nav_link">About</a></li>
+                <li><a href="/products" class="nav_link">Products</a></li>
+                <li><a href="#cart" class="nav_link">My Cart</a></li>
+                <li><a href="#contct" class="nav_link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="poster_heading">
+            <p class="poster_font">QUALITY PRODUCTS</p>
+            <p class="poster_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima exercitationem voluptatum accusamus laboriosam, sit dicta distinctio amet ea, harum molestias necessitatibus laudantium perspiciatis quo aliquid et dolorum rem alias corporis debitis quam modi. Modi saepe maiores assumenda! Unde, distinctio! Magni sapiente debitis minima cum, repellendus consequatur velit nam error praesentium.</p>
+        </div>
+        <div class="poster_image" id="pi">
+            <img src="/photos/poster.jpeg">
+        </div>
+        <p class="service_head" id="cart">Cart</p>
+        <div class="products">
+            <% rows.forEach(row => { %>
+                <div class="show_product">
+
+                <div class="product_img">
+                    <img src="/photos/dress7.jpeg" class="pimg">
+                </div>
+                <div class="card">
+                    <p>Product : <%= row.product %></p>
+                    <p>Price : <%= row.product_price %></p>
+                    <p>Quantity : <%= row.quantity %></p>
+                    <div class="shop">
+                        <form method="get" action="/addorder?id=<%- row.id %>">
+                            <input type="number" value="<%= row.id %>" name="id" hidden>
+                        <button type="submit" class="shopping">Shop Now</button>
+                        </form>
+                    </div>
+                  
+
+                </div>
+                </div>
+                
+            <% }) %>
+        </div>
+        <p class="service_head">Orders</p>
+        <div class="products">
+            <% orders.forEach(row => { %>
+                <div class="show_product">
+
+                <div class="product_img">
+                    <img src="/photos/dress4.jpeg" class="pimg">
+                </div>
+                <div class="card">
+                    <p>Product : <%= row.product %></p>
+                    <p>Price : <%= row.product_price %></p>
+                    <p>Quantity : <%= row.quantity %></p>
+                    <p>Order Status : <%= row.order_status %></p>
+                    
+                  
+
+                </div>
+                </div>
+                
+            <% }) %>
+
+        </div>
+
+       
+    </div>
+    <div class="services" id="srvices">
+        <p class="service_head">SERVICES</p>
+        <div class="service_body">
+            <div class="service1">
+                <div class="side1">
+                    <img src="/photos/door_step.jpeg">
+                </div>
+                <div class="side2">
+                    <p class="side_heading">Door Delievery</p>
+                    <p class="side_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nulla dolorum molestias maxime, vel maiores animi repellat minus placeat ut fugiat amet enim totam aliquam earum perspiciatis magnam culpa cupiditate eius excepturi quasi. Ipsum soluta assumenda officiis quidem, voluptate repellendus omnis! Numquam nesciunt consectetur neque sunt laboriosam dolore amet! Et cum voluptatibus, harum id ipsum aperiam consequatur quisquam amet sapiente!</p>
+                </div>
+                
+            </div>
+            <div class="service2">
+                <div class="side1">
+                    <img src="/photos/all_in_one.jpeg">
+                </div>
+                <div class="side2">
+                    <p class="side_heading">All In One</p>
+                    <p class="side_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab excepturi odit quibusdam corrupti laboriosam eum. Quia ut laudantium magni, corporis quam totam dolorem consequatur voluptates dicta, est perspiciatis repellat nemo reprehenderit libero ducimus esse tempora at nostrum sit, hic vitae asperiores nulla numquam. Omnis iste dignissimos quas sequi quod!</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="arrow"><a href="#navbar"><button class="shopping">Go To Top <i class="bi bi-arrow-up-circle-fill"></i></button></a></div>
+    </div>
+    <%- include('footer')%>
+</body>
+</html>
